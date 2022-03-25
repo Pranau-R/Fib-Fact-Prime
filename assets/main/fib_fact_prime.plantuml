@@ -1,0 +1,57 @@
+@startuml
+
+start
+
+:Create an header file;
+:Declare 3 external functions for each task;
+:Create different source file for each task;
+:Include header file inside all source files;
+:Create a main file with global variable, Menu and Switch Cases;
+:Include header file in main file;
+:Get input from user and store it in global variable;
+:Display Menu;
+:Declare variable choice;
+:Read Choice/
+
+while (choice is not exit) is (Yes)
+
+if (choice is < 4) then (yes)
+
+:Switch Choice;
+
+fork
+
+-> case1;
+:fibonacci series;
+:A;
+
+fork again
+
+-> case2;
+:factorial;
+:B;
+
+fork again
+
+-> case3;
+:prime numbers;
+:C;
+end fork
+
+else (case 4)
+:modify range;
+:D;
+kill;
+
+endif
+
+:O;
+:Display output;
+:D;
+:Read Choice/
+
+end while (No)
+
+stop
+
+@enduml

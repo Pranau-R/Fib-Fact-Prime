@@ -1,0 +1,17 @@
+@startuml
+
+start
+
+:A;
+:Read the input entered by user;
+if (check if the input value is <= 1) then (yes)
+:Display that input value itself;
+else (no)
+repeat :Next value <- Current value + Previous value;
+:Display next value;
+:next value = current value;
+repeat while (check if the current value < input value);
+endif
+:O;
+
+@enduml

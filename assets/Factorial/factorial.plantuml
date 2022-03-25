@@ -1,0 +1,19 @@
+@startuml
+
+start
+
+:B;
+:Read the input entered by user;
+
+if (check if the input value is <= 1) then (yes)
+:Display 1;
+else (no)
+:current value = input value;
+repeat : result <- current value * (current value -1)!;
+:current value = current value -1;
+repeat while (if current value is <= 1)
+:Display the result;
+endif
+:O;
+
+@enduml
