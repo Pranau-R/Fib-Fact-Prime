@@ -1,11 +1,9 @@
 /*
 
 Module: main.c
-
 Function:
     To display an user interactive Menu for various functions such as 
     fibonacci series, factorial and prime numbers using switch cases.
-
 Copyright notice:
     This file copyright (C) 2022 by
 
@@ -43,14 +41,11 @@ int num;
 /*
 
 Name: main()
-
 Function:
         To display an user interactive Menu for various functions such as 
         fibonacci series, factorial and prime numbers using switch cases.
-
 Definition:
         void main (void);
-
 Returns:
         Functions returning type void: nothing.
 
@@ -63,13 +58,14 @@ void main()
     printf("\n");
     printf("--------------------------------------------------------------------------------\n");
     printf("This is fib_fact_prime.exe v1.0.0\n");
-    printf("It can able to find the fibonacci series, and prime numbers in a user given number range.\n");
+    printf("It can able to find the fibonacci series, and prime numbers in\n");
+    printf("a user given number range.\n");
     printf("It can also find the factorial of user given number.\n");
     printf("--------------------------------------------------------------------------------\n");
     printf("\n");
 
     printf("\nEnter a Number: \n");
-    scanf("%f", &num);
+    scanf("%d", &num);
  
     printf("======== MENU ======== \n");
     printf("1. Fibonacci Series: \n");
@@ -88,17 +84,45 @@ void main()
             {
             case 1:
                 {
-                printf("---You selected fibonacci---\n");
+                printf("---You selected Fibonacci---\n");
                 fibonacci(num);
                 printf("The Series:\n");
                 int i;
-                for (i = 0; i <= num; ++i)
+                for (i = 0; i <= num; i++)
                     {
-                    printf("%d\n", fibonacci(num));
+                    printf("%d\n", fibonacci(i));
                     }
                 break;
                 }
             case 2:
+                {
+                printf("---You selected Factorial---\n");
+
+                printf("Result: %d\n", factorial(num));
+                break;
+                }
+            case 3:
+                {
+                printf("---You selected Prime Numbers---\n");
+                int i;
+                for (i = 2; i <= num; i++)
+                    {
+                    if (prime(2,i) == 0)
+                        {
+                        printf("%d\n",i);
+                        }
+                    }
+                break;
+                }
+            case 4:
+                {
+                printf("---You selected Modify Input---\n\n");
+
+                printf("\nEnter a Number: \n");
+                scanf("%d", &num);
+                break;
+                }
+            case 5:
                 {
                 return;
                 }

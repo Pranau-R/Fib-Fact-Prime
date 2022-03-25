@@ -24,12 +24,11 @@ Author:
 \****************************************************************************/
 
 /*
-Name: fib()
+Name: fibonacci()
 Function:
         To print the fibonacci series in user entered number range.
 Definition:
-        int fib (int);
-    
+        int fibonacci (int);
 Parameter and Arguments:
         An integer which is entered by user is passed inside the funtion as argument.
 Description:
@@ -40,15 +39,12 @@ Returns:
 
 int fibonacci (int num)
     {
-    printf("---Inside Fun---\n");
     if (num <= 1)
         {
-        printf("---Inside if---\n");
         return num;
         }
     else
         {
-        printf("---Inside else---\n");
         return fibonacci(num - 1) + fibonacci(num - 2);
         }
     }
