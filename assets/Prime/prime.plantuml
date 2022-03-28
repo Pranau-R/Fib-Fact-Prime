@@ -1,0 +1,23 @@
+@startuml
+
+start
+
+:C;
+:Declare a new variable for comparing input;
+:Read the input entered by user;
+:initialize new variable = 2;
+repeat
+if (is the input value == new variable) then (yes)
+:Display the input value;
+else (no)
+if (is the remainder of input value/new variable == 0) then (yes)
+:Do not display that value;
+else (no)
+:increment new variable;
+endif
+endif
+repeat while (is new variable is <= input value)
+->
+:O;
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+
+start
+
+:D;
+:Get new input value from user;
+:Store it in global variable;
+:Read Choice;
+
+@enduml
