@@ -58,16 +58,15 @@ void main()
     printf("\n");
     printf("--------------------------------------------------------------------------------\n");
     printf("This is fib_fact_prime.exe v1.0.0\n");
-    printf("It can able to find the fibonacci series, and prime numbers in\n");
-    printf("a user given number range.\n");
-    printf("It can also find the factorial of user given number.\n");
     printf("--------------------------------------------------------------------------------\n");
     printf("\n");
-
-    printf("\nEnter a Number: \n");
+    printf("It can able to find the fibonacci series, and prime numbers in\n");
+    printf("a user given number range.\n");
+    printf("It can also find the factorial of user given number. Now...\n\n");
+    printf("\nEnter a Range: \n");
     scanf("%d", &num);
 
-    printf("======== MENU ======== \n");
+    printf("\n======== MENU ======== \n");
     printf("1. Fibonacci Series: \n");
     printf("2. Factorial: \n");
     printf("3. Prime Numbers: \n");
@@ -84,8 +83,9 @@ void main()
             {
             case 1:
                 {
-                printf("---You selected Fibonacci---\n");
-                printf("The Series:\n");
+                printf("---You selected Fibonacci Series---\n");
+                //printf("The Series:\n");
+                printf("Fibonacci series within the given range %d is:\n\n", num);
                 int i, fib;
                 for (i = 0; i <= num; i++)
                     {
@@ -101,12 +101,13 @@ void main()
                 {
                 printf("---You selected Factorial---\n");
 
-                printf("Result: %lu\n", factorial(num));
+                printf("Factorial of number %d is: %lu\n\n", num, factorial(num));
                 break;
                 }
             case 3:
                 {
                 printf("---You selected Prime Numbers---\n");
+                printf("Prime numbers within the given range %d is:\n\n", num);
                 int i;
                 for (i = 2; i <= num; i++)
                     {
@@ -119,9 +120,9 @@ void main()
                 }
             case 4:
                 {
-                printf("---You selected Modify Input---\n\n");
+                printf("---You selected Modify Range---\n\n");
 
-                printf("\nEnter a Number: \n");
+                printf("\nEnter a Range: \n");
                 scanf("%d", &num);
                 break;
                 }
