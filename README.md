@@ -22,15 +22,19 @@ The repository consists of following directories:
 The following are Flowcharts for the task:
 
 General Flowchart:
+
 ![General Flowchart](assets/main/fib_fact_prime.png)
 
 Flowchart for Fibonacci Series:
+
 ![Fibonacci Flowchart](assets/fibonacci/fibonacci.png)
 
 Flowchart for Factorial of a Number:
+
 ![Factorial Flowchart](assets/factorial/factorial.png)
 
 Flowchart for Prime Numbers:
+
 ![Prime Flowchart](assets/prime/prime.png)
 
 Flowchart to Modify Input:
