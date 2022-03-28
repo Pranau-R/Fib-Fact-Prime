@@ -66,7 +66,7 @@ void main()
 
     printf("\nEnter a Number: \n");
     scanf("%d", &num);
- 
+
     printf("======== MENU ======== \n");
     printf("1. Fibonacci Series: \n");
     printf("2. Factorial: \n");
@@ -85,12 +85,15 @@ void main()
             case 1:
                 {
                 printf("---You selected Fibonacci---\n");
-                fibonacci(num);
                 printf("The Series:\n");
-                int i;
+                int i, fib;
                 for (i = 0; i <= num; i++)
                     {
-                    printf("%d\n", fibonacci(i));
+                    fib = fibonacci(i);
+                    if (fib < num)
+                        {
+                        printf("%d\n", fib);
+                        }
                     }
                 break;
                 }
@@ -98,7 +101,7 @@ void main()
                 {
                 printf("---You selected Factorial---\n");
 
-                printf("Result: %d\n", factorial(num));
+                printf("Result: %lu\n", factorial(num));
                 break;
                 }
             case 3:

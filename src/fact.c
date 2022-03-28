@@ -34,11 +34,13 @@ Parameter and Arguments:
         An integer which is entered by user is passed inside the funtion as argument.
 Description:
         It is an unsigned long int function and returns integer of int type.
+        We used unsigned and long return type because factorial for numbers above 16 exceeds 4-byte.
+        So to overcome that limitation, we use unsigned long.
 Returns:
         Functions returning type int: integer values.
 */
 
-unsigned long int factorial(unsigned int num)
+unsigned long int factorial (int num)
     {
     if (num <= 1)
         {

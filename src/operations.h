@@ -2,7 +2,7 @@
 
 Module: operations.h
 Function:
-    To declare extern functions and to extern the global variables for performing tasks such as 
+    To declare extern functions and to extern the global variables for performing tasks such as
     fibonacci series, factorial and prime numbers.
 Copyright notice:
     This file copyright (C) 2022 by
@@ -31,7 +31,7 @@ Author:
 extern int num;
 
 int fibonacci (int);
-unsigned long int factorial (unsigned int);
+unsigned long int factorial (int);
 int prime (int, int);
 
 #endif
