@@ -27,19 +27,19 @@ General Flowchart:
 
 Flowchart for Fibonacci Series:
 
-![Fibonacci Flowchart](assets/fibonacci/fibonacci.png)
+![Fibonacci Flowchart](assets/Fibonacci/fibonacci.png)
 
 Flowchart for Factorial of a Number:
 
-![Factorial Flowchart](assets/factorial/factorial.png)
+![Factorial Flowchart](assets/Factorial/factorial.png)
 
 Flowchart for Prime Numbers:
 
-![Prime Flowchart](assets/prime/prime.png)
+![Prime Flowchart](assets/Prime/prime.png)
 
 Flowchart to Modify Input:
 
-![Modification Flowchart](assets/modify/modify.png)
+![Modification Flowchart](assets/Modify/modify.png)
 
 - Version:
 
